@@ -1,0 +1,273 @@
+<mxfile host="app.diagrams.net" pages="5">
+  <diagram name="1. Схема БД" id="0">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" parent="1" style="rounded=1;whiteSpace=wrap;fontSize=12;fillColor=#dae8fc;" value="Owners (Владельцы)" vertex="1">
+          <mxGeometry height="60" width="180" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" parent="1" style="rounded=1;whiteSpace=wrap;fontSize=12;fillColor=#d5e8d4;" value="Pets (Питомцы)" vertex="1">
+          <mxGeometry height="60" width="180" x="190" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;fontSize=12;fillColor=#ffe6cc;" value="Vaccinations (Прививки)" vertex="1">
+          <mxGeometry height="60" width="180" x="570" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="1" style="rounded=1;whiteSpace=wrap;fontSize=12;fillColor=#e1d5e7;" value="Vets (Ветеринары)" vertex="1">
+          <mxGeometry height="60" width="180" x="830" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_n1_n2" edge="1" parent="1" source="n1" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;edgeStyle=orthogonalEdgeStyle;" target="n2" value="Owns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_n2_n3" edge="1" parent="1" source="n2" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;edgeStyle=orthogonalEdgeStyle;" target="n3" value="Vaccinated">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_n3_n4" edge="1" parent="1" source="n3" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;edgeStyle=orthogonalEdgeStyle;" target="n4" value="PerformedBy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_n4_n1" edge="1" parent="1" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;edgeStyle=orthogonalEdgeStyle;" value="Referral">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="89.5" as="sourcePoint" />
+            <mxPoint x="230" y="89.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="2. Owns примеры связей" id="1">
+    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t2" parent="1" style="text;fontSize=14;fontStyle=1;html=1;" vertex="1" value="Примеры связей Owns (Владелец -&amp;gt; Питомец)">
+          <mxGeometry x="50" y="5" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;fontSize=11;" vertex="1" value="Иван Петров">
+          <mxGeometry x="50" y="60" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o2" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;fontSize=11;" vertex="1" value="Мария Иванова">
+          <mxGeometry x="50" y="130" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o3" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;fontSize=11;" vertex="1" value="Алексей Сидоров">
+          <mxGeometry x="50" y="200" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o4" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;fontSize=11;" vertex="1" value="Елена Козлова">
+          <mxGeometry x="50" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o5" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;fontSize=11;" vertex="1" value="Дмитрий Новиков">
+          <mxGeometry x="50" y="340" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" vertex="1" value="Барсик">
+          <mxGeometry x="600" y="60" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="p11" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" vertex="1" value="Том">
+          <mxGeometry x="600" y="120" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" vertex="1" value="Мухтар">
+          <mxGeometry x="600" y="180" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" vertex="1" value="Мурка">
+          <mxGeometry x="600" y="240" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" vertex="1" value="Рыжик">
+          <mxGeometry x="600" y="300" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" vertex="1" value="Шарик">
+          <mxGeometry x="600" y="360" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="p6" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" vertex="1" value="Белка">
+          <mxGeometry x="600" y="420" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="o1_p1" parent="1" source="o1" target="p1" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Owns | 2020-04-01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1_p11" parent="1" source="o1" target="p11" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Owns | 2021-06-01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2_p2" parent="1" source="o2" target="p2" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Owns | 2019-08-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3_p3" parent="1" source="o3" target="p3" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Owns | 2021-02-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3_p5" parent="1" source="o3" target="p5" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Owns | 2022-05-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o4_p4" parent="1" source="o4" target="p4" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Owns | 2020-12-01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o5_p6" parent="1" source="o5" target="p6" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Owns | 2021-09-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1_b1" parent="1" source="a1" target="b1" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Vaccinated | 2023-01-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2_b2" parent="1" source="a2" target="b2" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Vaccinated | 2023-02-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3_b3" parent="1" source="a3" target="b3" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Vaccinated | 2023-03-05">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4_b4" parent="1" source="a4" target="b4" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Vaccinated | 2022-12-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5_b5" parent="1" source="a5" target="b5" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" edge="1" value="Vaccinated | 2023-05-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="3. Vaccinated+PerformedBy примеры" id="2">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t3" parent="1" style="text;fontSize=14;fontStyle=1;html=1;" value="Примеры Vaccinated + PerformedBy&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="500" x="47" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" value="Барсик" vertex="1">
+          <mxGeometry height="50" width="120" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" value="Мухтар" vertex="1">
+          <mxGeometry height="50" width="120" x="50" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" value="Мурка" vertex="1">
+          <mxGeometry height="50" width="120" x="50" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" value="Шарик" vertex="1">
+          <mxGeometry height="50" width="120" x="50" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontSize=11;" value="Белка" vertex="1">
+          <mxGeometry height="50" width="120" x="50" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffe6cc;fontSize=11;" value="Нобивак Rabies" vertex="1">
+          <mxGeometry height="50" width="140" x="350" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffe6cc;fontSize=11;" value="Нобивак DHPPi" vertex="1">
+          <mxGeometry height="50" width="140" x="350" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffe6cc;fontSize=11;" value="Пуревакс FeLV" vertex="1">
+          <mxGeometry height="50" width="140" x="350" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffe6cc;fontSize=11;" value="Гексадог" vertex="1">
+          <mxGeometry height="50" width="140" x="350" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffe6cc;fontSize=11;" value="Вангард-5" vertex="1">
+          <mxGeometry height="50" width="140" x="350" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;fontSize=11;" value="Доктор Васильева" vertex="1">
+          <mxGeometry height="50" width="150" x="650" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;fontSize=11;" value="Доктор Смирнов" vertex="1">
+          <mxGeometry height="50" width="150" x="650" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;fontSize=11;" value="Доктор Белова" vertex="1">
+          <mxGeometry height="50" width="150" x="650" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;fontSize=11;" value="Доктор Григорьев" vertex="1">
+          <mxGeometry height="50" width="150" x="650" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;fontSize=11;" value="Доктор Фёдоров" vertex="1">
+          <mxGeometry height="50" width="150" x="650" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="b1_c1" edge="1" parent="1" source="b1" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" target="c1" value="PerformedBy | 2023-01-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2_c2" edge="1" parent="1" source="b2" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" target="c2" value="PerformedBy | 2023-02-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b3_c3" edge="1" parent="1" source="b3" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" target="c3" value="PerformedBy | 2023-03-05">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b4_c4" edge="1" parent="1" source="b4" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" target="c4" value="PerformedBy | 2022-12-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b5_c5" edge="1" parent="1" source="b5" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#666;" target="c5" value="PerformedBy | 2023-05-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="4. Рёбра" id="3">
+    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t4" parent="1" style="text;fontSize=15;fontStyle=1;html=1;" vertex="1" value="Типы рёбер и их атрибуты">
+          <mxGeometry x="350" y="5" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="na" parent="1" style="ellipse;whiteSpace=wrap;fontSize=13;fillColor=#dae8fc;" vertex="1" value="Owners">
+          <mxGeometry x="80" y="250" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nb" parent="1" style="ellipse;whiteSpace=wrap;fontSize=13;fillColor=#d5e8d4;" vertex="1" value="Pets">
+          <mxGeometry x="350" y="100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nc" parent="1" style="ellipse;whiteSpace=wrap;fontSize=13;fillColor=#ffe6cc;" vertex="1" value="Vaccinations">
+          <mxGeometry x="700" y="250" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nd" parent="1" style="ellipse;whiteSpace=wrap;fontSize=13;fillColor=#e1d5e7;" vertex="1" value="Vets">
+          <mxGeometry x="350" y="450" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ne" parent="1" style="ellipse;whiteSpace=wrap;fontSize=12;fillColor=#f8cecc;" vertex="1" value="Vets&#xa;(ReferredTo)">
+          <mxGeometry x="700" y="450" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" source="na" target="nb" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#333;" edge="1" value="Owns&#xa;ownership_start_date&#xa;is_primary">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" source="nb" target="nc" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#333;" edge="1" value="Vaccinated&#xa;vaccination_date&#xa;dose_number&#xa;notes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" source="nc" target="nd" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#333;" edge="1" value="PerformedBy&#xa;procedure_date&#xa;certificate_number">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" source="nd" target="na" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#333;" edge="1" value="Referral&#xa;referral_date&#xa;reason">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" parent="1" source="nd" target="ne" style="curved=1;fontSize=10;labelBackgroundColor=#ffffff;strokeColor=#333;" edge="1" value="ReferredTo&#xa;referral_date&#xa;reason">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="5. Итоговый граф" id="6">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t7" parent="1" style="text;fontSize=16;fontStyle=1;html=1;" value="Итоговый граф" vertex="1">
+          <mxGeometry height="30" width="300" x="420" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="g0" parent="1" style="ellipse;whiteSpace=wrap;fontSize=14;fillColor=#dae8fc;" value="Owners" vertex="1">
+          <mxGeometry height="70" width="130" x="340" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="g1" parent="1" style="ellipse;whiteSpace=wrap;fontSize=14;fillColor=#d5e8d4;" value="Pets" vertex="1">
+          <mxGeometry height="70" width="130" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="g2" parent="1" style="ellipse;whiteSpace=wrap;fontSize=14;fillColor=#ffe6cc;" value="Vaccinations" vertex="1">
+          <mxGeometry height="70" width="130" x="680" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="g3" parent="1" style="ellipse;whiteSpace=wrap;fontSize=14;fillColor=#e1d5e7;" value="Vets" vertex="1">
+          <mxGeometry height="70" width="130" x="800" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="g4" parent="1" style="ellipse;whiteSpace=wrap;fontSize=12;fillColor=#f8cecc;" value="Vets&#xa;(ReferredTo)" vertex="1">
+          <mxGeometry height="70" width="130" x="560" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="ge_g0_g1" edge="1" parent="1" source="g0" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;" target="g1" value="Owns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ge_g1_g2" edge="1" parent="1" source="g1" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;" target="g2" value="Vaccinated">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ge_g2_g3" edge="1" parent="1" source="g2" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;" target="g3" value="PerformedBy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ge_g3_g0" edge="1" parent="1" source="g3" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;" target="g0" value="Referral">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ge_g3_g4" edge="1" parent="1" source="g3" style="curved=1;fontSize=11;labelBackgroundColor=#ffffff;strokeColor=#666;" target="g4" value="ReferredTo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

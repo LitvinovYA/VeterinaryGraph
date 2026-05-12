@@ -1,0 +1,36 @@
+Задача: Графовая база данных "Система бронирования авиабилетов"
+
+Тема: Авиаперелёты и бронирование
+
+Описание:
+Создать графовую базу данных для системы бронирования авиабилетов.
+
+Узлы (Nodes):
+1. Passengers (Пассажиры) — информация о пассажирах (id, full_name, passport, phone)
+2. Airports (Аэропорты) — информация об аэропортах (id, name, city, country, code)
+3. Flights (Рейсы) — информация о рейсах (id, flight_number, departure_time, arrival_time, airline)
+4. Bookings (Бронирования) — информация о бронированиях (id, booking_number, booking_date, status)
+
+Рёбра (Edges):
+1. Books (Бронирует) — пассажир бронирует билет (Passenger -> Booking)
+   Атрибуты: seat_number, price, booking_date
+2. DepartsFrom (Вылетает из) — рейс вылетает из аэропорта (Flight -> Airport)
+   Атрибуты: terminal, gate, scheduled_time
+3. ArrivesAt (Прибывает в) — рейс прибывает в аэропорт (Flight -> Airport)
+   Атрибуты: terminal, scheduled_time
+4. Includes (Включает) — бронирование включает рейс (Booking -> Flight)
+   Атрибуты: class_type (Economy/Business/First), baggage_allowance
+5. ConnectsTo (Стыковка) — рейс стыкуется с другим рейсом (Flight -> Flight)
+   Атрибуты: connection_time_minutes, is_guaranteed
+
+Примеры запросов:
+1. MATCH: Найти все рейсы, которые забронировал пассажир (Passenger -> Booking -> Flight)
+2. MATCH: Найти все аэропорты, через которые пролетает пассажир (Passenger -> Booking -> Flight -> Airport)
+3. SHORTEST_PATH: Найти кратчайший маршрут перелётов между двумя городами (Flight -> Flight через ConnectsTo)
+4. MATCH: Найти всех пассажиров, летящих в определённый город
+5. SHORTEST_PATH: Найти маршрут с ограничением по числу стыковок
+
+Практическая ценность:
+Система позволяет эффективно искать маршруты, анализировать пассажиропотоки,
+оптимизировать стыковки и управлять бронированиями — типичная задача для
+графовой базы данных, где связи между сущностями играют ключевую роль.
